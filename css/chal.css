@@ -1,0 +1,133 @@
+body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 1000px;
+  height: 770px;
+  background-color: #9e9e9e;
+  padding: 50px;
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .Professional,
+.container .Basic {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  position: relative;
+  background-color: white;
+  width: 480px;
+  height: fit-content;
+}
+
+.false::before {
+  content: "+";
+  position: absolute;
+  background-color: rgb(219, 25, 25);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: white;
+  padding: 3px;
+  transform: rotate(241deg);
+  display: flex;
+  justify-content: center;
+  left: -26px;
+  align-items: center;
+}
+
+hr {
+  height: 1px;
+  background-color: #eeeeee;
+  border: none;
+}
+p {
+  position: relative;
+  left: 45px;
+}
+.container .name2,
+.container .name {
+  position: initial;
+  background-color: red;
+  padding: 17px;
+  margin-top: 0;
+  color: white;
+  font-size: 20px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.container .name2 {
+  background-color: rgb(38, 130, 216);
+}
+.true2::after {
+  content: "?";
+  position: absolute;
+  background-color: #607d8b;
+  width: 15px;
+  height: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 382px;
+  padding: 2px;
+  bottom: 15px;
+  border-radius: 50%;
+}
+.true1::before,
+.true::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 6px;
+  height: 2px;
+  left: -23px;
+  top: 6px;
+  z-index: 2;
+  border-bottom: 2px solid white;
+  border-left: solid 2px white;
+  transform: rotate(310deg);
+}
+.true1::after,
+.true::after {
+  content: "";
+  position: absolute;
+  background-color: #4caf50;
+  width: 16px;
+  height: 16px;
+  left: -27px;
+  top: 1px;
+  border-radius: 50%;
+}
+.Professional::after {
+  content: "Save 50%";
+  position: absolute;
+  width: 131px;
+  top: -71px;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  left: 325px;
+  padding-left: 21px;
+  font-weight: bold;
+  height: 50px;
+  background-color: #2196f3;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.Professional::before {
+  content: "";
+  position: absolute;
+  top: -71px;
+  left: 427px;
+  z-index: 2;
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+  border: 25px solid;
+  border-color: transparent #eeeeee transparent transparent;
+}
